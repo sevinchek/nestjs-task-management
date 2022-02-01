@@ -18,7 +18,7 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
         with:
           source: '.'
-          target: '/var/www/mywebsite'
+          target: '/prod/nestjs-task-management'
 
       - name: Executing remote command
         uses: appleboy/ssh-action@master
